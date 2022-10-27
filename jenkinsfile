@@ -1,8 +1,9 @@
+<<<<<<< HEAD
 node{
       stage('Clone') {
           checkout scm
       }
       stage('install_mariadb') {
-        sh "ansible_playbook -i inventaire playbook.yml"
+        sh "ansible playbook -i inventaire playbook.yml"
       }
 }
